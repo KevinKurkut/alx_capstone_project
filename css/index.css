@@ -146,7 +146,6 @@ nav ul li a:hover::after {
     color: rgb(60, 103, 184);
 }
 #header{
-    height: 100vh;
     width: 100%;
 }
 .header-profile{
@@ -228,6 +227,7 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: 0.5s;
     }
     nav ul li{
         display: block;
@@ -237,5 +237,17 @@ nav .fas{
         position: absolute;
         top: 24px;
         left: 24px;
+    }
+    .services-list{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer{
+        width: 100%;
+    }
+    .social-lists{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
 }    
