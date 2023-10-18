@@ -179,8 +179,12 @@ nav ul li a:hover::after {
 .social-lists ul li {
     display: inline-block;
     list-style: none;
-    margin: 15px 25px;
+    margin: 10px;
     transition: transform(1s);
+}
+.social-lists ul li a{
+    text-decoration: none;
+    font-size: 18.55px;
 }
 .copyright{
     width: 100%;
@@ -190,7 +194,7 @@ nav ul li a:hover::after {
 
 
 /*------------------small screens-----------------*/
-nav .fas{
+nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 680px) {
@@ -201,7 +205,7 @@ nav .fas{
     }
     
     h2 {
-        font-size: 1.6em;
+        font-size: 1.4em;
         margin-bottom: 15px;
     }
     
@@ -214,7 +218,7 @@ nav .fas{
         font-size: 0.9em;
         color: #555;
     }
-    nav .fas{
+    nav .fa-solid{
         display: block;
         font-size: 18px;
     }
@@ -227,16 +231,17 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: 0.5s;
+        transition: right 0.5s;
     }
     nav ul li{
         display: block;
         margin: 20px;
     }
-    nav ul .fas{
+    nav ul .fa-solid{
         position: absolute;
         top: 24px;
         left: 24px;
+        cursor: pointer;
     }
     .services-list{
         flex-direction: column;

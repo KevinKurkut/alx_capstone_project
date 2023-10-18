@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c04140dbb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header" class="header">
@@ -21,10 +22,10 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contacts">Contact</a></li>
                     <!---close icon-->
-                    <i class="fas fa-times" onclick="close()"></i>
+                    <i class="fa-solid fa-xmark" onclick="close()"></i>
                 </ul>
                 <!--menu icon-->
-                <i class="fas fa-bar" onclick="open()"></i>
+                <i class="fa-solid fa-bars" onclick="open()"></i>
             </nav>
             <div class="header-profile">
                 <div class="header-image">
@@ -107,11 +108,11 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-tittle">Contact me</h1>
-                    <p><i class="fas fa-paper-plane"></i>kevinkurkut@gmail.com</p>
+                    <p><i class="fa-thin fa-paper-plane"></i>kevinkurkut@gmail.com</p>
                 </div>
                 <div class="contact-right">
                     <div class="form-input">
-                        <form>
+                        <form action="/submit" method="post">
                             <label for="name"></label>
                             <input type="text" id="name" placeholder="Your Name" required><br>
                             <label for="email"></label>
@@ -138,6 +139,6 @@
         </div>
         <p class="copyright">Designed by &copy; <a href="#">KEVIN</a></p>
     </footer>
-    <link rel="stylesheet" href="js/script.js">
+    <script src="js/script.js"></script>
 </body>
 </html>
