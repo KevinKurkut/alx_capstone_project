@@ -1,8 +1,6 @@
+const togglebtn=document.getElementById('toggleButton');
+const navlinks=document.getElementById('navlinks');
 
-var sidemenu=document.getElementById('sidemenu');
-function open(){
-    sidemenu.style.right = "0";
-}
-function close(){
-    sidemenu.style.right = "-150px";
-}
+togglebtn.addEventListener('click', ()=>{
+    navlinks.classList.toggle('active');
+});

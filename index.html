@@ -11,33 +11,32 @@
     <script src="https://kit.fontawesome.com/c04140dbb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header" class="header">
-        <div id="container">
-            <nav>
-                <p class="logo"><a href="#">KVN</a></p>
-                <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contact</a></li>
-                    <!---close icon-->
-                    <i class="fa-solid fa-xmark" onclick="close()"></i>
-                </ul>
-                <!--menu icon-->
-                <i class="fa-solid fa-bars" onclick="open()"></i>
-            </nav>
-            <div class="header-profile">
-                <div class="header-image">
-                    <img src="images/profile.jpg" alt="">
-                </div>
-                <div class="header-text">
-                    <p>Computer Scientist</p>
-                    <h1>Hi, I'm Kevin Rutto<br> <span>Kirop</span></h1>
-                </div>
+    <div class="navbar">
+        <div class="logo">KVN</div>
+        <div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="header-profile">
+            <div class="header-image">
+                <img src="images/profile.jpg" alt="">
+            </div>
+            <div class="header-text">
+                <p>Computer Scientist</p>
+                <h1>Hi, I'm Kevin Rutto<br> <span>Kirop</span></h1>
             </div>
         </div>
-    </div>
+    </main>
     <div class="about-me" id="about">
         <div class="container-1">
             <div class="about-heading">

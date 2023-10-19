@@ -1,7 +1,7 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .section {
@@ -80,9 +80,6 @@ form button:hover {
     background-color: #0056b3;
 }
 
-nav ul li a:hover {
-    color: rgb(60, 103, 184);
-}
 
 .contact {
     background-color: #f9f9f9;
@@ -100,48 +97,62 @@ nav ul li a:hover {
     color: #0056b3;
     transform: translateY(-5px);
 }
-.fa{
+.fa-solid{
     font-size: 24px;
 }
 /*navbar section*/
-nav {
+.navbar{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 15px 25px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 18px;
+    align-items: center;
+    padding: 20px 50px;
     position: relative;
+    background-color: #5781de;
+}
+.logo{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.toggle-button{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.toggle-button .bar{
+    width: 25px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 3px 0px;
+}
+.nav-links{
+    list-style-type: none;
+    display: flex;
+}
+.nav-links li{
+    margin-right: 25px;
+}
+.nav-links li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+.nav-links li a:hover{
+    color: orangered;
 }
 
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: rgb(60, 103, 184);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition-delay: 15ms;
-}
 
-nav ul li a:hover::after {
-    width: 100%;
-}
 /*about*/
 .download-btn{
     text-decoration: none;
 }
 
 /*header section*/
+main{
+    padding-top: 4px;
+}
 .header-text h1 span {
     color: rgb(60, 103, 184);
 }
@@ -151,7 +162,7 @@ nav ul li a:hover::after {
 .header-profile{
     display: grid;
     place-items: center;
-    padding: 2px;
+    padding-top: 5px;
 }
 .header-image img{
     border-radius: 50%;
@@ -194,9 +205,6 @@ nav ul li a:hover::after {
 
 
 /*------------------small screens-----------------*/
-nav .fa-solid{
-    display: none;
-}
 @media only screen and (max-width: 680px) {
     h1 {
         font-size: 1.8em;
@@ -218,30 +226,27 @@ nav .fa-solid{
         font-size: 0.9em;
         color: #555;
     }
-    nav .fa-solid{
-        display: block;
-        font-size: 18px;
+    .nav-bar{
+        padding: 20px 25px;
     }
-    nav ul{
-        background: #fff;
-        position: fixed;
-        top: 0;
-        right: -150px;
-        width: 150px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
+    .toggle-button{
+        display: flex;
     }
-    nav ul li{
-        display: block;
-        margin: 20px;
-    }
-    nav ul .fa-solid{
+    .nav-links{
+        display: none;
+        flex-direction: column;
         position: absolute;
-        top: 24px;
-        left: 24px;
-        cursor: pointer;
+        width: 100%;
+        background-color: #5472b3;
+        padding: 25px;
+        top: 100%;
+        left: 0;
+    }
+    .nav-links li{
+        padding: 12px 0px;
+    }
+    .nav-links.active{
+        display: block;
     }
     .services-list{
         flex-direction: column;
