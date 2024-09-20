@@ -3,140 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin-My Personal Website</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/c04140dbb9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">KVN</div>
-        <div class="toggle-button" id="toggleButton">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <nav>
+        <div class="logo">
+           <h1>Kev<span>in</span></h1> 
         </div>
-        <ul class="nav-links" id="navlinks">
+        <ul id="menuList">
             <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-    </div>
-    <main>
-        <div class="header-profile">
-            <div class="header-image">
-                <img src="images/profile.jpg" alt="">
-            </div>
-            <div class="header-text">
-                <p>Computer Scientist</p>
-                <h1>Hi, I'm Kevin Rutto<br> <span>Kirop</span></h1>
-            </div>
+        <div class="menuBar" onclick="toggleBtn()">
+            <i class="fa-solid fa-bars"></i>
         </div>
-    </main>
-    <div class="about-me" id="about">
-        <div class="container-1">
-            <div class="about-heading">
-                <h1 class="sub-tittle">About me</h1>
-            </div>
-            <div class="about-text">
-                <p>Currently pursuing Bachelors degree in Computer Science at University of Eldoret. With the little knowledge I have managed to collaborate in open source projects. <br>
-                <br> I find that having positive mindset on things and learning to work smarter is the key to getting things done.</p>
-                              
-            </div>
-            <a href="images/Meshack-CV1.pdf" download class="download-btn">DOWNLOAD CV</a>
-        </div>
-    </div>
-    <div class="services" id="services">
-        <h1 class="sub-tittle">My Services</h1>
-      <div class="container">
-        <div class="services-list">
-            <div>
-                <img src="images/web-dev.png">
-                <h2>Web Development</h2>
-                <p>I develop functional web aplication <br> that suits clients requirements</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <img src="images/web-design.png">
-                <h2>Web Design</h2>
-                <p>Desiging web application that are user friendly and <br> satisfy user requirements</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <img src="images/new-king.jpeg">
-                <h2>Chess Tutor</h2>
-                <p>To help your improve your chess games <br>and tactical skills</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-      </div>
-    </div>
-    <!--projects section-->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h1 class="sub-tittle">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <div class="layer">
-                        <h3>Python Calculator</h3>
-                        <p>A simple calculator that performs addition, subtraction, <br> division and multiplication of two numbers</p>
-                        <a href="https://github.com/KevinKurkut/python-calculator.git">Check repository</a>
-                    </div>
-                </div>
-
-
-                <div class="work">
-                    <img src="" alt="">
-                </div>
-
-
-                <div class="work">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---contact section-->
-    <section class="contact" id="contacts">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-tittle">Contact me</h1>
-                    <p><i class="fa-thin fa-paper-plane"></i>kevinkurkut@gmail.com</p>
-                </div>
-                <div class="contact-right">
-                    <div class="form-input">
-                        <form action="/submit" method="post" id="contactform">
-                            <label for="name"></label>
-                            <input type="text" id="name" placeholder="Your Name" required><br>
-                            <label for="email"></label>
-                            <input type="email" id="email" placeholder="Your Email" required><br>
-                            <label for="Message"></label>
-                            <textarea name="msg" id="msg" rows="8" placeholder="Your Message"></textarea><br>
-                            <button type="submit" id="btn">SEND</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--footer-->
-    <footer>
-        <div class="social-lists">
-            <ul>
-                <li><a href="https://www.facebook.com/kevorutto.ke.5?mibextid=ZbWKwL" class="fa fa-facebook"></a></li>
-                <li><a href="https://github.com/KevinKurkut" class="fa fa-github"></a></li>
-                <li><a href="http://twitter.com/KevinKurkut" class="fa fa-twitter"></a></li>
-                <li><a href="https://www.linkedin.com/in/kevin-kirop-a5864726b" class="fa fa-linkedin"></a></li>
-                <li><a href="https://www.instagram.com/kevoruttoke/?hl=en" class="fa fa-instagram"></a></li>
-            </ul>
-        </div>
-        <p class="copyright">Designed by &copy; <a href="#">KEVIN</a></p>
-    </footer>
+    </nav>
+    <script src="https://kit.fontawesome.com/c04140dbb9.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

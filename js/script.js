@@ -1,6 +1,11 @@
-const togglebtn=document.getElementById('toggleButton');
-const navlinks=document.getElementById('navlinks');
+let menuList=document.getElementById("menuList");
+menuList.style.maxHeight="0px";
 
-togglebtn.addEventListener('click', ()=>{
-    navlinks.classList.toggle('active');
-});
+function toggleBtn(){
+    if(menuList.style.maxHeight=="0px"){
+        menuList.style.maxHeight="300px";
+        // menuList.style.filter="blur(0.4)";
+    }else{
+        menuList.style.maxHeight="0px";
+    }
+}
